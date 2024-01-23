@@ -100,4 +100,22 @@ $(document).ready(function () {
       notificationElement.hide();
     }, 2500);
   }
+  // Event listener for save buttons
+  $(".saveBtn").on("click", function () {
+    const timeBlockId = $(this).parent().attr("id");
+    const eventText = $(this).siblings(".description").val();
+
+    // Find the corresponding time block in the timeBlocks array
+    const timeBlock = timeBlocks.find((block) => block.id === timeBlockId);
+
+    if (timeBlock) {
+      // Update the event property of the time block
+      timeBlock.event = eventText;
+
+      // Save the updated timeBlocks array to local storage
+      localStorage.setItem("timeBlocks", JSON.stringify(timeBlocks));
+      // Show a success notification when the event is saved
+      showNotification("Event has been saved successfully!");
+    }
+  });
 });
