@@ -29,6 +29,8 @@ Click on a time block, enter your task or event, and click the "Save" button to 
 Your tasks are saved locally, so they will persist even if you refresh the page or close the app.
 Manage your workday efficiently by scheduling and updating your tasks as needed.
 
+![screen](./Assets/screenshot1.png)
+
 ## Contributing
 
 Contributions to this project are welcome! If you have any suggestions, improvements, or bug fixes, please feel free to open an issue or submit a pull request. We appreciate your contributions to make this app better.
