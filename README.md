@@ -1,6 +1,7 @@
 # Work Day Scheduler
 
 Work Day Scheduler is a simple calendar app that allows you to schedule your workday and manage your tasks efficiently. With features like color-coding, local storage, and real-time time tracking, it helps you stay organized and productive throughout the day.
+Check it out on [Github Pages](https://kamilawroblewska.github.io/Work-Day-Scheduler/)
 
 ## Features
 
