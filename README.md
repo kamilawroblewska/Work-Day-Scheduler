@@ -15,8 +15,8 @@ Local Storage: The app saves your scheduled tasks in local storage. This means y
 Clone or download this repository to your local machine.
 
 Copy code
-git clone https://github.com/your-username/work-day-scheduler.git
-Open the project folder in your code editor.
+git clone git@github.com:kamilawroblewska/Work-Day-Scheduler.git  
+Open the project folder in your code editor.  
 Open the index.html file in your web browser to start using the app.
 
 ## Usage
