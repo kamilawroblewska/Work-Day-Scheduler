@@ -1,7 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: lightcyan;
 }
 
 textarea {
@@ -18,12 +19,24 @@ header {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(48, 79, 105);
   padding: 60px;
+}
+.lead {
+  padding-top: 20px;
+}
+
+#notification {
+  text-align: center;
+  font-style: italic;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+.description:hover {
+  border: 3px solid rgb(1, 85, 115);
 }
 
 .time-block {
@@ -41,6 +54,7 @@ header {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  text-align: center;
 }
 
 .past {
