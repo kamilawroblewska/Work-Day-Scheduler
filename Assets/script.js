@@ -75,4 +75,18 @@ $(document).ready(function () {
   }
 
   drawTimeBlocks();
+  /* Coloring blocks */
+  const now = dayjs().format("hA");
+  const sample = dayjs();
+  timeBlocks.forEach(function (value) {
+    const presentEl = $("#" + value.id);
+    console.log(value.time.diff(sample));
+    if (now == value.time.format("hA")) {
+      presentEl.addClass("present");
+    } else if (value.time.diff(sample) <= 0) {
+      presentEl.addClass("past");
+    } else {
+      presentEl.addClass("future");
+    }
+  });
 });
