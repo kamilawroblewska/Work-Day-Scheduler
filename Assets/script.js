@@ -118,4 +118,17 @@ $(document).ready(function () {
       showNotification("Event has been saved successfully!");
     }
   });
+  // Load events from local storage and update the timeBlocks array
+  const savedTimeBlocks = JSON.parse(localStorage.getItem("timeBlocks"));
+  if (savedTimeBlocks) {
+    timeBlocks.forEach((timeBlock) => {
+      const savedBlock = savedTimeBlocks.find(
+        (block) => block.id === timeBlock.id
+      );
+      if (savedBlock) {
+        timeBlock.event = savedBlock.event;
+        $(`#${timeBlock.id} .description`).val(savedBlock.event);
+      }
+    });
+  }
 });
