@@ -89,4 +89,15 @@ $(document).ready(function () {
       presentEl.addClass("future");
     }
   });
+  // Function to show a notification
+  function showNotification(message) {
+    const notificationElement = $("#notification");
+    notificationElement.text(message);
+    notificationElement.show();
+
+    // Automatically hide the notification after a few seconds
+    setTimeout(function () {
+      notificationElement.hide();
+    }, 2500);
+  }
 });
